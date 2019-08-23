@@ -1,0 +1,15 @@
+﻿@page "/"
+
+<h1>Hello, world!</h1>
+
+<Styled @bind-Classname="@p">
+    color: red;
+</Styled>
+
+<p class="@p">Welcome to your new app. This is red if BlazorStyled is working.</p>
+
+<EjsCalendar></EjsCalendar>
+
+@code {
+    private string p;
+}
